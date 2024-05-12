@@ -1,0 +1,34 @@
+* {
+    /* Change your font family */
+    font-family: sans-serif;
+}
+
+.content-table {
+    @apply border-collapse my-[25px] text-[0.9em] min-w-[400px] overflow-hidden shadow-lg;
+}
+
+.content-table thead tr {
+    @apply bg-teal-600 text-white text-left;
+}
+
+.content-table th,
+.content-table td {
+    @apply py-[12px] px-[15px]
+}
+
+.content-table tbody tr {
+    @apply border-b-teal-600;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    @apply bg-[#f3f3f3];
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+@apply border-b-2 border-[#009879];
+}
+
+.content-table tbody tr.active-row {
+    @apply font-bold text-[#009879]
+}
