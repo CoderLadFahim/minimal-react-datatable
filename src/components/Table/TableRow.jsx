@@ -15,10 +15,7 @@ function TableRow({rowData, actionHandler, actions, columns}) {
 							{value.type === 'link' ? (
 								<Link
 									to={
-										'/details?data=' +
-										encodeURIComponent(
-											JSON.stringify(rowData)
-										)
+										value.route + rowData.id
 									}
 									className="text-teal-600 underline"
 								>

@@ -4,8 +4,8 @@ import data from '../data/data.json';
 
 const Details = () => {
 	const [queryParams] = useSearchParams()
-	const detailsQueryValue = queryParams.get('data')
-	const details = detailsQueryValue ? JSON.parse(detailsQueryValue) : null
+	const id = queryParams.get('id')
+	const details = data.find(obj => obj.id.toString() === id.toString())
 	const handleAction = (row, name) => {
 		console.log(row, name)
 	}

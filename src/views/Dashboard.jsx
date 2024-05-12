@@ -12,7 +12,7 @@ const Dashboard = () => {
 			    label: 'Name',
 			    key: 'name',
 			    type: 'link',
-			    route: '/details'
+			    route: '/details?id='
 		    },
 
 		    {
